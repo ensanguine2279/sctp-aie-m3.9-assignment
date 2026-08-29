@@ -13,18 +13,23 @@ import java.net.URL;
 public class ResourceReader {
     private static final Logger LOGGER = LoggerFactory.getLogger(ResourceReader.class);
 
+    // Resource file names for testing
     private static final String NON_EXISTENT_FILE = "nonexistentfile.txt";
     private static final String EXISTING_FILE = "existingfile.txt";
 
     private static String readFileContent(String resourceName) throws IOException {
+        // Locate the resource file using the class loader
         URL resource = App.class.getClassLoader().getResource(resourceName);
 
+        // Throw an exception if the resource is not found
         if (resource == null)
             throw new FileNotFoundException("Resource not found: " + resourceName);
 
+        // Open the resource file and read its content
         try (InputStream input = resource.openStream();
                 BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {
 
+            // Read the content of the resource file line by line
             StringBuilder content = new StringBuilder();
             String line;
 

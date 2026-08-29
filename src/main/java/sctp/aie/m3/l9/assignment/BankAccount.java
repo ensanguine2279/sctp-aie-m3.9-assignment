@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 public class BankAccount {
     private static final Logger LOGGER = LoggerFactory.getLogger(BankAccount.class);
 
+    // Threshold for large deposit or withdrawal amounts
     private static final int LARGE_AMOUNT_THRESHOLD = 10000;
 
     private double balance;
@@ -19,10 +20,12 @@ public class BankAccount {
     }
 
     public void deposit(double amount) throws InvalidAmountException {
+        // Check for invalid deposit amount
         if (amount <= 0) {
             throw new InvalidAmountException(amount);
         }
 
+        // Check for large deposit amount
         if (amount > LARGE_AMOUNT_THRESHOLD) {
             LOGGER.warn("Depositing a large amount: " + amount);
         }
@@ -32,14 +35,17 @@ public class BankAccount {
     }
 
     public void withdraw(double amount) throws InvalidAmountException, InsufficientAmountException {
+        // Check for invalid withdrawal amount
         if (amount <= 0) {
             throw new InvalidAmountException(amount);
         }
 
+        // Check for large withdrawal amount
         if (amount > LARGE_AMOUNT_THRESHOLD) {
             LOGGER.warn("Withdrawing a large amount: " + amount);
         }
 
+        // Check for sufficient balance before withdrawal
         if (amount <= balance) {
             balance -= amount;
             LOGGER.info("Withdrew amount: " + amount + ", new balance: " + balance);
