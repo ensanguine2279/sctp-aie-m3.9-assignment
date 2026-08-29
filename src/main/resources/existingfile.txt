@@ -1,0 +1,7 @@
+The next iterations of agent harnesses will center on coded extensions that integrate automatically. Pi lead, others are following, and DeepSeek represents the extreme.
+
+All powered and driven by autoresearch and recursive self-improvements.
+
+For most of AI's history, recursive self-improvement belonged to theory and science fiction. I. J. Good described an "intelligence explosion" in 1965: a machine designs a better machine, which becomes better at designing the next one. The curve goes vertical.
+
+We are surprisingly close to a narrow version of that loop. Agents can inspect failed runs, edit their tools and instructions, test the result, and keep what works. They are also beginning to run experiments that produce better models. The results are scrappy, but the pieces are starting to connect.

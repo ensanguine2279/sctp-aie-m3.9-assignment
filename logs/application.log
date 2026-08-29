@@ -1,0 +1,150 @@
+11:28:59.266 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Depositing a large amount: 17000.0
+11:28:59.268 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 17000.0, new balance: 24000.0
+11:28:59.268 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Withdrawing a large amount: 20000.0
+11:28:59.269 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 20000.0, new balance: 4000.0
+11:28:59.269 [main] ERROR sctp.aie.m3.l9.assignment.App - An error occurred: 
+sctp.aie.m3.l9.assignment.InvalidAmountException: Deposit or withdrawal amount is negative or zero: -77.0
+	at sctp.aie.m3.l9.assignment.BankAccount.deposit(BankAccount.java:23)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:18)
+11:31:10.161 [main] INFO  sctp.aie.m3.l9.assignment.App - Initial balance: 7000.0
+11:31:10.165 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Depositing a large amount: 17000.0
+11:31:10.168 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 17000.0, new balance: 24000.0
+11:31:10.168 [main] INFO  sctp.aie.m3.l9.assignment.App - Current balance after deposit: 24000.0
+11:31:10.169 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Withdrawing a large amount: 20000.0
+11:31:10.169 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 20000.0, new balance: 4000.0
+11:31:10.169 [main] INFO  sctp.aie.m3.l9.assignment.App - Current balance after withdrawal: 4000.0
+11:31:10.169 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 7000.0, new balance: 11000.0
+11:31:10.169 [main] INFO  sctp.aie.m3.l9.assignment.App - Current balance after deposit: 11000.0
+11:31:10.169 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 2000.0, new balance: 9000.0
+11:31:10.169 [main] INFO  sctp.aie.m3.l9.assignment.App - Current balance after withdrawal: 9000.0
+11:31:10.170 [main] ERROR sctp.aie.m3.l9.assignment.App - An error occurred: 
+sctp.aie.m3.l9.assignment.InvalidAmountException: Deposit or withdrawal amount is negative or zero: -77.0
+	at sctp.aie.m3.l9.assignment.BankAccount.deposit(BankAccount.java:23)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:29)
+11:40:09.063 [main] ERROR sctp.aie.m3.l9.assignment.App - An error occurred while reading the file: 
+java.io.FileNotFoundException: nonexistentfile.txt (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
+	at java.base/java.io.FileReader.<init>(FileReader.java:60)
+	at sctp.aie.m3.l9.assignment.App.handleFileReaderExceptionAndLogging(App.java:43)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:54)
+11:58:28.691 [main] INFO  sctp.aie.m3.l9.assignment.App - File content: 
+The next iterations of agent harnesses will center on coded extensions that integrate automatically. Pi lead, others are following, and DeepSeek represents the extreme.
+
+All powered and driven by autoresearch and recursive self-improvements.
+
+For most of AI's history, recursive self-improvement belonged to theory and science fiction. I. J. Good described an "intelligence explosion" in 1965: a machine designs a better machine, which becomes better at designing the next one. The curve goes vertical.
+
+We are surprisingly close to a narrow version of that loop. Agents can inspect failed runs, edit their tools and instructions, test the result, and keep what works. They are also beginning to run experiments that produce better models. The results are scrappy, but the pieces are starting to connect.
+
+12:08:52.213 [main] ERROR sctp.aie.m3.l9.assignment.App - File not found: 
+java.io.FileNotFoundException: Resource not found: nonexistentfile.txt
+	at sctp.aie.m3.l9.assignment.App.readResourceFile(App.java:57)
+	at sctp.aie.m3.l9.assignment.App.handleFileReaderExceptionAndLogging(App.java:77)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:88)
+12:13:05.753 [main] ERROR sctp.aie.m3.l9.assignment.App - File not found: 
+java.io.FileNotFoundException: Resource not found: nonexistentfile.txt
+	at sctp.aie.m3.l9.assignment.ResourceReader.readResourceFile(ResourceReader.java:15)
+	at sctp.aie.m3.l9.assignment.App.handleFileReaderExceptionAndLogging(App.java:56)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:67)
+16:43:21.371 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read non-existent file: nonexistentfile.txt
+16:43:21.373 [main] ERROR s.a.m3.l9.assignment.ResourceReader - File not found: 
+java.io.FileNotFoundException: Resource not found: nonexistentfile.txt
+	at sctp.aie.m3.l9.assignment.ResourceReader.readFileContent(ResourceReader.java:23)
+	at sctp.aie.m3.l9.assignment.ResourceReader.runTest(ResourceReader.java:43)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:44)
+16:43:21.375 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read existing file: existingfile.txt
+16:43:21.376 [main] INFO  s.a.m3.l9.assignment.ResourceReader - File content: 
+The next iterations of agent harnesses will center on coded extensions that integrate automatically. Pi lead, others are following, and DeepSeek represents the extreme.
+
+All powered and driven by autoresearch and recursive self-improvements.
+
+For most of AI's history, recursive self-improvement belonged to theory and science fiction. I. J. Good described an "intelligence explosion" in 1965: a machine designs a better machine, which becomes better at designing the next one. The curve goes vertical.
+
+We are surprisingly close to a narrow version of that loop. Agents can inspect failed runs, edit their tools and instructions, test the result, and keep what works. They are also beginning to run experiments that produce better models. The results are scrappy, but the pieces are starting to connect.
+
+16:45:14.986 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Initial balance: 7000.0
+16:45:14.988 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Depositing a large amount: 17000.0
+16:45:14.989 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 17000.0, new balance: 24000.0
+16:45:14.989 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after deposit: 24000.0
+16:45:14.990 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Withdrawing a large amount: 20000.0
+16:45:14.990 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 20000.0, new balance: 4000.0
+16:45:14.990 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after withdrawal: 4000.0
+16:45:14.990 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 7000.0, new balance: 11000.0
+16:45:14.990 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after deposit: 11000.0
+16:45:14.990 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 2000.0, new balance: 9000.0
+16:45:14.991 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after withdrawal: 9000.0
+16:45:14.991 [main] ERROR s.aie.m3.l9.assignment.BankAccount - An error occurred: 
+sctp.aie.m3.l9.assignment.InvalidAmountException: Deposit or withdrawal amount is negative or zero: -22.0
+	at sctp.aie.m3.l9.assignment.BankAccount.withdraw(BankAccount.java:36)
+	at sctp.aie.m3.l9.assignment.BankAccount.runTest(BankAccount.java:72)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:10)
+16:45:14.992 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read non-existent file: nonexistentfile.txt
+16:45:14.993 [main] ERROR s.a.m3.l9.assignment.ResourceReader - File not found: 
+java.io.FileNotFoundException: Resource not found: nonexistentfile.txt
+	at sctp.aie.m3.l9.assignment.ResourceReader.readFileContent(ResourceReader.java:23)
+	at sctp.aie.m3.l9.assignment.ResourceReader.runTest(ResourceReader.java:43)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:11)
+16:45:14.993 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read existing file: existingfile.txt
+16:45:14.994 [main] INFO  s.a.m3.l9.assignment.ResourceReader - File content: 
+The next iterations of agent harnesses will center on coded extensions that integrate automatically. Pi lead, others are following, and DeepSeek represents the extreme.
+
+All powered and driven by autoresearch and recursive self-improvements.
+
+For most of AI's history, recursive self-improvement belonged to theory and science fiction. I. J. Good described an "intelligence explosion" in 1965: a machine designs a better machine, which becomes better at designing the next one. The curve goes vertical.
+
+We are surprisingly close to a narrow version of that loop. Agents can inspect failed runs, edit their tools and instructions, test the result, and keep what works. They are also beginning to run experiments that produce better models. The results are scrappy, but the pieces are starting to connect.
+
+16:54:53.428 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Initial balance: 7000.0
+16:54:53.429 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before deposit: 7000.0
+16:54:53.430 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to deposit amount: 17000.0
+16:54:53.430 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Depositing a large amount: 17000.0
+16:54:53.431 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 17000.0, new balance: 24000.0
+16:54:53.431 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after deposit: 24000.0
+16:54:53.431 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before withdrawal: 24000.0
+16:54:53.431 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to withdraw amount: 20000.0
+16:54:53.432 [main] WARN  s.aie.m3.l9.assignment.BankAccount - Withdrawing a large amount: 20000.0
+16:54:53.432 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 20000.0, new balance: 4000.0
+16:54:53.432 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after withdrawal: 4000.0
+16:54:53.432 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before deposit: 4000.0
+16:54:53.432 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to deposit amount: 7000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Deposited amount: 7000.0, new balance: 11000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after deposit: 11000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before withdrawal: 11000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to withdraw amount: 2000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Withdrew amount: 2000.0, new balance: 9000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance after withdrawal: 9000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before deposit: 9000.0
+16:54:53.433 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to deposit amount: -77.0
+16:54:53.433 [main] ERROR s.aie.m3.l9.assignment.BankAccount - An error occurred: 
+sctp.aie.m3.l9.assignment.InvalidAmountException: Deposit or withdrawal amount is negative or zero: -77.0
+	at sctp.aie.m3.l9.assignment.BankAccount.deposit(BankAccount.java:23)
+	at sctp.aie.m3.l9.assignment.BankAccount.testDeposit(BankAccount.java:55)
+	at sctp.aie.m3.l9.assignment.BankAccount.runTest(BankAccount.java:86)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:6)
+16:54:53.434 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Current balance before withdrawal: 9000.0
+16:54:53.434 [main] INFO  s.aie.m3.l9.assignment.BankAccount - Attempting to withdraw amount: -22.0
+16:54:53.435 [main] ERROR s.aie.m3.l9.assignment.BankAccount - An error occurred: 
+sctp.aie.m3.l9.assignment.InvalidAmountException: Deposit or withdrawal amount is negative or zero: -22.0
+	at sctp.aie.m3.l9.assignment.BankAccount.withdraw(BankAccount.java:36)
+	at sctp.aie.m3.l9.assignment.BankAccount.testWithdraw(BankAccount.java:66)
+	at sctp.aie.m3.l9.assignment.BankAccount.runTest(BankAccount.java:87)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:6)
+16:54:53.435 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read non-existent file: nonexistentfile.txt
+16:54:53.435 [main] ERROR s.a.m3.l9.assignment.ResourceReader - File not found: 
+java.io.FileNotFoundException: Resource not found: nonexistentfile.txt
+	at sctp.aie.m3.l9.assignment.ResourceReader.readFileContent(ResourceReader.java:23)
+	at sctp.aie.m3.l9.assignment.ResourceReader.runTest(ResourceReader.java:43)
+	at sctp.aie.m3.l9.assignment.App.main(App.java:7)
+16:54:53.436 [main] INFO  s.a.m3.l9.assignment.ResourceReader - Attempting to read existing file: existingfile.txt
+16:54:53.437 [main] INFO  s.a.m3.l9.assignment.ResourceReader - File content: 
+The next iterations of agent harnesses will center on coded extensions that integrate automatically. Pi lead, others are following, and DeepSeek represents the extreme.
+
+All powered and driven by autoresearch and recursive self-improvements.
+
+For most of AI's history, recursive self-improvement belonged to theory and science fiction. I. J. Good described an "intelligence explosion" in 1965: a machine designs a better machine, which becomes better at designing the next one. The curve goes vertical.
+
+We are surprisingly close to a narrow version of that loop. Agents can inspect failed runs, edit their tools and instructions, test the result, and keep what works. They are also beginning to run experiments that produce better models. The results are scrappy, but the pieces are starting to connect.
+
